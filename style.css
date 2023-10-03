@@ -1,0 +1,106 @@
+*{
+    margin:0;
+    padding:0;
+    /* Padding is the space between the content of an element and its border.*/
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+body
+{
+    background: #222;
+}
+.card
+{
+    width: 90%; 
+    max-width: 470px;
+    background: linear-gradient(135deg,#00feba,#5b548a);
+    color: #fff; /*Text color inside this card*/
+    margin: 100px auto 0; /*100px from top, left-right auto, 0 from bottom */
+    border-radius: 20px; /*To make borders rounded*/
+    padding: 40px 35px; /*Space inside the card*/
+    text-align: center;
+}
+.search
+{
+    width:100%;
+    display: flex; /*When we add flex to any container like div, it becomes a flexible container*/
+    /*Flexbox is excellent at distributing available space within the container among its child items. It automatically adjusts the width of items to fit within the container.*/
+    align-items: center;
+    justify-content: space-between; /*This is generally used with flex containers to inform the type of flex*/
+}
+.search input /*This adds CSS for the input tag inside search div box*/
+{
+    border:0;
+    outline: 0;
+    background: #ebfffc;
+    color: #555; /*Text color inside this card*/
+    padding: 10px 25px; /*10px padding from top and bottom and 25px padding from left and right*/
+    height: 60px;
+    /*It specifies the height of the content area of the element, excluding padding, border, and margin.*/
+    border-radius: 30px;
+    flex:1; /*Since we have defied the search div as a flex container, we would need to tell the elements to have equall spacing(by giving value as 1)*/
+    margin-right: 16px;
+    font-size: 18px;
+}
+.search button /*This adds CSS for the button tag inside search div box*/
+{
+    border:0;
+    outline: 0;
+    background: #ebfffc;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.search button img /*We can add individual tags to any element*/
+{
+    width: 16px;
+}
+.weather-icon
+{
+    width: 170px;
+    margin-top: 30px;
+}
+.weather h1
+{
+    font-size: 80px;
+    font-weight: 500;
+}
+.weather h2
+{
+    font-size: 45px;
+    font-weight: 400;
+    margin-top: -10px;
+}
+.details
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    margin-top: 50px;
+}
+.col
+{
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+.col img
+{
+    width: 40px;
+    margin-right: 10px;
+}
+.humidity,.wind
+{
+    font-size: 28px;
+    margin-top: -6px;
+}
+.weather
+{
+    display: none;
+}
+.error
+{
+    display: none;
+}
